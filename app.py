@@ -30,4 +30,5 @@ def predict():
         
     return render_template('index2.html', prediction_text='KNN Model  has predicted Survived for given Data is : {}'.format(prediction))
    
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
